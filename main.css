@@ -1,0 +1,410 @@
+/* variables */
+
+
+/* rules */
+
+*
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #707070;
+}
+
+body
+{
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options
+{
+    padding: 1em;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tit
+{
+    font-size: 3rem;
+}
+
+.title-of-app
+{
+    background-color: #707070;
+    padding: 0.8em;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom:20px;
+}
+
+label
+{
+    font-size: 1.3rem;
+}
+
+.form-wrapper
+{
+    margin: 20px 0px 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-wrapper > label
+{
+    font-size: 2rem;
+    margin: 0 20px;
+}
+
+.details1
+{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.details-input-1
+{
+    border-radius: 20px;
+    border: 1.5px solid #707070;
+    padding: 20px 10px;
+    font-size: 1.7rem;
+    margin: 20px 0 4px 0;
+}
+
+.details-input-2
+{
+    border-radius: 20px;
+    padding: 8px 10px;
+    font-size: 2rem;
+    margin: 20px 0;
+    background-color: #707070;
+    color: #ffffff;
+    width: 30%;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+input[placeholder]
+{
+    color: #9c9c9c; 
+}
+
+.wrapper-of-2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add
+{
+    border-radius: 20px;
+    padding: 25px 10px;
+    font-size: 1.5rem;
+    background-color: #707070;
+    color: #ffffff;
+    width: 30%;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    /* border: 1.5px solid #707070; */
+    margin: 20px 0 10px 0;
+}
+
+.value
+{
+    width: 70%;
+}
+
+.reset, .download
+{
+    border-radius: 20px;
+    padding: 8px 10px;
+    font-size: 1.7rem;
+    background-color: #707070;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reset-wrap
+{
+    border-top: 2px dashed #707070;
+    padding: 30px 0;
+    width: 70%;
+}
+
+.chart
+{
+    margin: 20px;
+    background-color: #ffffff;
+    border: 1px solid #707070;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.chart-wrapper
+{
+    font-size: 1rem;
+    width: 95%;
+}
+
+.title-of-chart
+{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.chart-content
+{
+    border-left: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    margin: 20px 50px;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.chart-content-element
+{
+    position: relative;
+    bottom: -390px;
+    left:-50px;
+    height: 20px;
+}
+
+.c2::before, .c3::before, .c4::before, .c5::before
+{
+    position: absolute;
+    border-top: 1px dashed #d3d3d3;
+    content:"";
+    display: block;
+    width: 100%;
+    left: 50px;
+    top: 10px;
+    z-index: 1;
+}
+
+.c2
+{
+    bottom: -280px;
+}
+
+.c3
+{
+    bottom: -170px;
+}
+
+.c4
+{
+    bottom: -60px;
+}
+
+.c5
+{
+    bottom: 50px;
+}
+
+.c6
+{
+    position: relative;
+    bottom: -390px;
+    left:-40px;
+    height: 20px;
+    top:-120px;
+}
+
+.second-block
+{
+    display: none;
+}
+
+.bar-wrapper
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.bar-wrapper > div
+{
+    width: 50px;
+    height: 0px;
+    background-color: red;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    
+}
+
+.bar-order
+{
+    position: absolute;
+    bottom: -30px;
+}
+
+.bar-value
+{
+    background-color: white;
+    height: min-content;
+    position: absolute;
+    bottom: 5px;
+    font-size: 0.8rem;
+    padding: 2px;
+    display: none;
+}
+
+.show-values
+{
+    margin: 10px 0;
+}
+
+.show-values > label
+{
+    font-size: 1.7rem
+}
+
+.color-wrap
+{
+    display: flex;
+    align-items: center;
+}
+
+.color-wrap > label
+{
+    font-size: 1.7rem;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+@media (min-width: 1200px)
+{
+    
+
+
+.wrapper
+{
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.options
+{
+    border-right: 2px dashed #707070;
+    min-width: 320px;
+    max-width: 320px;
+    align-items: flex-start;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.tit
+{
+    font-size: 1.3rem;
+}
+
+.title-of-app
+{
+    font-size: 1.1rem;
+    width: 90%;
+
+}
+
+.form-wrapper > label
+{
+    font-size: 1.1rem;
+    margin: 0 5px;
+}
+
+.details1
+{
+    margin-bottom: 10px;
+}
+
+.details-input-1
+{
+
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    margin: 8px 0 4px 0;
+}
+
+.details-input-2
+{
+    font-size: 0.8rem;
+    margin: 10px 0;
+}
+
+
+.add
+{
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    margin: 8px 0 4px 0;
+}
+
+
+.reset, .download
+{
+    font-size: 0.8rem;
+    margin:0;
+}
+
+.reset-wrap
+{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.chart
+{
+    width: 870px;
+    margin: 20px;
+    background-color: #ffffff;
+    border: 1px solid #707070;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+
+.show-values > label
+{
+    font-size: 1rem;
+}
+
+
+.color-wrap > label
+{
+    font-size: 1rem;
+    margin: 8px 0 4px 10px;
+}
+
+}
