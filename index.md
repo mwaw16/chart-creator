@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Chart creator</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="options">
+            <div class="title-of-app">CHART CREATOR</div>
+            <div class="tit">Choose your chart type</div>
+            <div class="form-wrapper">
+                    <label>Bar chart<input type="radio" name="type-of-chart"></label>
+                    <label style="opacity: 0.5;">Time series<input type="radio" disabled name="type-of-chart"></label>
+            </div>
+            <div class="details1">
+                <input id="name-of-chart" class="details-input-1" type="text" placeholder="Name of chart">
+                <input id="unit" class="details-input-1" type="text" placeholder="Unit">
+                <div id="next" class="details-input-2">Next</div>
+            </div>
+            <div id="second-block" class="details1 second-block">
+                <input id="series-name" class="details-input-1" type="text" placeholder="Serie's name">
+                <div class="color-wrap">
+                    <input id="color-bar" class="details-input-1" type="color" value="#ff8080" placeholder="Color">
+                    <label for="color-bar">Color</label>
+                </div>
+                <div class="wrapper-of-2">
+                    <div><input id="bar-value" class="details-input-1 value" type="number" step="0.01" placeholder="Value"></div>
+                    <div id="add" class="add">Add</div>
+                </div>
+                <div class="show-values">
+                    <input type="checkbox" id="show-values-input">
+                    <label for="show-values-input">Show values</label>
+                </div>
+            </div>
+
+            <div class="reset-wrap">
+                <div id="reset" class="reset">Reset all</div>
+            </div>
+            <div id="download" class="download">Download your chart</div>
+
+        </div>
+
+        <div id="chart-wrapper" class="chart-wrapper">
+            <div id="chart" class="chart">
+            <div id="title-real" class="title-of-chart">Title</div>
+            <div id="chart-content" class="chart-content">
+                <div id="c1" class="chart-content-element">0</div>
+                <div id="c2" class="chart-content-element c2">25</div>
+                <div id="c3" class="chart-content-element c3">50</div>
+                <div id="c4" class="chart-content-element c4">75</div>
+                <div id="c5" class="chart-content-element c5">100</div>
+                <div id="c6" class="c6">%</div>
+                <div class="bar-wrapper" id="bar-wrapper"></div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA==" crossorigin="anonymous"></script>
+<script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
+<script defer src="main.js"></script>
+
+</body>
+</html>
